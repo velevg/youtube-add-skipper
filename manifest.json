@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Youtube Ad Skip",
+    "description": "Youtube Ad Skip",
+    "version": "1.0",
+
+    "content_scripts": [{
+        "js": ["script.js"],
+        "run-at": "document-idle",
+        "matches": ["<all_urls>"]
+    }],
+
+    "permission": [
+        "tabs",
+        "activetab"
+    ]
+}
